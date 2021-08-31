@@ -25,7 +25,7 @@ controllerManager:
       memory: 20Mi
 
 admissionWebhook:
-  create: true
+  create: false
 
 scheduler:
   create: true
