@@ -21,7 +21,7 @@ spec:
       resources:
         requests:
           storage: 2Gi
-      storageClassName: gp2
+      storageClassName: fast-disks
   metad:
     resources:
       requests:
@@ -30,14 +30,14 @@ spec:
       limits:
         cpu: "1"
         memory: "1Gi"
-    replicas: 1
+    replicas: 3
     image: vesoft/nebula-metad
     version: v2.0.1
     storageClaim:
       resources:
         requests:
           storage: 2Gi
-      storageClassName: gp2
+      storageClassName: fast-disks
   storaged:
     resources:
       requests:
@@ -53,7 +53,7 @@ spec:
       resources:
         requests:
           storage: 2Gi
-      storageClassName: gp2
+      storageClassName: fast-disks
   reference:
     name: statefulsets.apps
     version: v1
