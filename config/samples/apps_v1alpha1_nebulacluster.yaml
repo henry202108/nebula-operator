@@ -12,6 +12,9 @@ spec:
         cpu: "1"
         memory: "1Gi"
     replicas: 1
+    config:
+      minloglevel:"0"
+      v:"3"
     image: vesoft/nebula-graphd
     version: v2.5.0
     service:
@@ -31,6 +34,9 @@ spec:
         cpu: "1"
         memory: "1Gi"
     replicas: 3
+    config:
+      minloglevel:"0"
+      v:"3"
     image: vesoft/nebula-metad
     version: v2.5.0
     storageClaim:
@@ -47,6 +53,9 @@ spec:
         cpu: "1"
         memory: "1Gi"
     replicas: 3
+    config:
+      minloglevel:"0"
+      v:"3"
     image: vesoft/nebula-storaged
     version: v2.5.0
     storageClaim:
